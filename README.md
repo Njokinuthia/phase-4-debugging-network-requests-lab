@@ -63,11 +63,19 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  added new toy, got name uninitialized error in network and rails server log
+  corrected create statement
+
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  tried adding a like, got error (unexpected end of JSON input)
+  checked fetch request(which was ok) and contoller render json part - was missing render json
+
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  clicked on donate and checked for error in network browser and rails server logs
+  error was no route, added rourte
